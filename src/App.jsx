@@ -54,7 +54,7 @@ function App() {
             setInterval(function () {
               console.log("calling");
               navigator.geolocation.getCurrentPosition(success);
-            }, 20000);
+            }, 3000);
             // navigator.geolocation.getCurrentPosition(success);
           } else if (result.state === "prompt") {
             navigator.geolocation.getCurrentPosition(success, errors, options);
